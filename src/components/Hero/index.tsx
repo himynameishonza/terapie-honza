@@ -96,8 +96,11 @@ export default function Hero() {
       </header>
 
       <main className="relative m-auto flex min-h-full w-full max-w-7xl items-center px-8">
-        <div className="mt-50 absolute right-10 top-10 z-20 hidden h-[500px] w-[500px] translate-x-1/3 animate-move-x rounded-full bg-indigo-300 mix-blend-overlay lg:block lg:translate-x-0" />
-        <div className="mt-50 absolute right-0 top-0 -z-10 hidden h-[650px] w-[650px] translate-x-1/4 animate-move-y rounded-full bg-indigo-500 bg-opacity-50 lg:block lg:translate-x-0" />
+        <div className="mt-50 hidde absolute right-10 top-10 z-20 h-[500px] w-[500px] translate-x-1/3 animate-move-x rounded-full bg-gradient-to-tl from-indigo-500 to-indigo-400 mix-blend-overlay lg:block lg:translate-x-0" />
+        <div className="mt-50 to-indigo-/400/0 absolute right-0 top-0 -z-10 hidden h-[650px] w-[650px] translate-x-1/4 animate-move-y rounded-full bg-opacity-50 bg-gradient-to-tl from-indigo-300/60 lg:block lg:translate-x-0" />
+        <div className="mt-50 absolute right-0 top-0 -z-10 hidden h-[400px] w-[400px] translate-x-1/4 animate-move-x rounded-full bg-gradient-to-tr from-indigo-100 to-indigo-400/20 lg:block lg:translate-x-0" />
+        <div className="mt-50 absolute right-32 top-20 -z-10 hidden h-[340px] w-[340px] translate-x-1/4 animate-move-y rounded-full bg-opacity-50 bg-gradient-to-l from-indigo-500 to-indigo-300 lg:block lg:translate-x-0" />
+
         <div className="absolute right-0 top-0 z-10 hidden w-1/2 items-end bg-transparent lg:flex">
           <img src="/graphics/man2.png" />
         </div>
