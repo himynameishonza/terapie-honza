@@ -4,6 +4,7 @@ import { TiSocialLinkedin, TiSocialFacebook } from 'react-icons/ti'
 import { MdOutlineMedicalServices } from 'react-icons/md'
 import { HiArrowLongDown } from 'react-icons/hi2'
 import { CgMenuRight } from 'react-icons/cg'
+import BackgroundComp from '../BackgroundComp'
 
 const mainNavItems = [
   {
@@ -39,24 +40,6 @@ const socialNavItems = [
   },
 ]
 
-const BackgroundComp = () => {
-  return (
-    <>
-      <img
-        style={{
-          backgroundSize: 'cover',
-          backgroundImage:
-            'url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80)',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-        }}
-        className="absolute top-0 bottom-0 left-0 right-0 -z-10 h-full w-full"
-      />
-      <div className="absolute top-0 bottom-0 left-0 right-0 -z-10 bg-white/80 backdrop-blur-3xl" />
-    </>
-  )
-}
-
 export default function Hero() {
   const [navOpened, setNavOpened] = useState(false)
 
@@ -64,8 +47,7 @@ export default function Hero() {
     'rounded-sm px-3 py-2 text-stone-600 hover:text-stone-900 font-poppins text-[13px] uppercase tracking-wider font-[600] hover:underline underline-offset-4 decoration-4 hover:decoration-indigo-500 decoration-transparent transition-all'
   return (
     <section className="relative grid min-h-screen w-full grid-rows-[auto_1fr_auto] overflow-y-hidden bg-transparent">
-      <BackgroundComp />
-      <header className="flex items-center justify-between p-8 lg:px-16 lg:py-14">
+      <header className="z-20 flex items-center justify-between p-8 lg:px-16 lg:py-14">
         <h1 className="font-open text-2xl font-black">
           <span className="text-slate-800">tvoje</span>
           <span className="text-indigo-500">máma</span>
@@ -98,7 +80,7 @@ export default function Hero() {
         <img src="/graphics/man2.png" className=" h-full max-h-screen" />
       </div>
       <main className="relative m-auto flex min-h-full w-full max-w-7xl items-end px-8 lg:items-center">
-        <div className="mt-50 absolute top-10 z-20 hidden h-[500px] w-[500px] translate-x-1/3 animate-move-x rounded-full bg-gradient-to-tl from-indigo-500 to-indigo-400 mix-blend-overlay lg:right-10 lg:block lg:translate-x-0" />
+        <div className="mt-50 absolute top-10 isolate z-20 hidden h-[500px] w-[500px] translate-x-1/3 animate-move-x rounded-full bg-gradient-to-tl from-indigo-500 to-indigo-400 mix-blend-overlay lg:right-10 lg:block lg:translate-x-0" />
         <div className="mt-50 absolute top-0 -z-10 hidden h-[650px] w-[650px] translate-x-1/4 animate-move-y rounded-full bg-opacity-50 bg-gradient-to-tl from-indigo-300/60 to-indigo-400/0 lg:right-0 lg:block lg:translate-x-0" />
         <div className="mt-50 absolute top-0 -z-10 hidden h-[400px] w-[400px] translate-x-1/4 animate-move-x rounded-full bg-gradient-to-tr from-indigo-100 to-indigo-400/20 lg:right-0 lg:block lg:translate-x-0" />
         <div className="mt-50 absolute top-20 -z-10 hidden h-[340px] w-[340px] translate-x-1/4 animate-move-y rounded-full bg-opacity-50 bg-gradient-to-l from-indigo-500 to-indigo-300 lg:right-32 lg:block lg:translate-x-0" />
