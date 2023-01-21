@@ -94,18 +94,17 @@ export default function Hero() {
           </a>
         </div>
       </header>
-
+      <div className="absolute left-1/2 bottom-0 z-10 hidden w-1/2 max-w-xl items-end bg-transparent pt-20 lg:block">
+        <img src="/graphics/man2.png" className=" h-full max-h-screen" />
+      </div>
       <main className="relative m-auto flex min-h-full w-full max-w-7xl items-center px-8">
-        <div className="mt-50 hidde absolute right-10 top-10 z-20 h-[500px] w-[500px] translate-x-1/3 animate-move-x rounded-full bg-gradient-to-tl from-indigo-500 to-indigo-400 mix-blend-overlay lg:block lg:translate-x-0" />
-        <div className="mt-50 to-indigo-/400/0 absolute right-0 top-0 -z-10 hidden h-[650px] w-[650px] translate-x-1/4 animate-move-y rounded-full bg-opacity-50 bg-gradient-to-tl from-indigo-300/60 lg:block lg:translate-x-0" />
-        <div className="mt-50 absolute right-0 top-0 -z-10 hidden h-[400px] w-[400px] translate-x-1/4 animate-move-x rounded-full bg-gradient-to-tr from-indigo-100 to-indigo-400/20 lg:block lg:translate-x-0" />
-        <div className="mt-50 absolute right-32 top-20 -z-10 hidden h-[340px] w-[340px] translate-x-1/4 animate-move-y rounded-full bg-opacity-50 bg-gradient-to-l from-indigo-500 to-indigo-300 lg:block lg:translate-x-0" />
+        <div className="mt-50 absolute top-10 z-20 hidden h-[500px] w-[500px] translate-x-1/3 animate-move-x rounded-full bg-gradient-to-tl from-indigo-500 to-indigo-400 mix-blend-overlay lg:right-10 lg:block lg:translate-x-0" />
+        <div className="mt-50 absolute top-0 -z-10 hidden h-[650px] w-[650px] translate-x-1/4 animate-move-y rounded-full bg-opacity-50 bg-gradient-to-tl from-indigo-300/60 to-indigo-400/0 lg:right-0 lg:block lg:translate-x-0" />
+        <div className="mt-50 absolute top-0 -z-10 hidden h-[400px] w-[400px] translate-x-1/4 animate-move-x rounded-full bg-gradient-to-tr from-indigo-100 to-indigo-400/20 lg:right-0 lg:block lg:translate-x-0" />
+        <div className="mt-50 absolute top-20 -z-10 hidden h-[340px] w-[340px] translate-x-1/4 animate-move-y rounded-full bg-opacity-50 bg-gradient-to-l from-indigo-500 to-indigo-300 lg:right-32 lg:block lg:translate-x-0" />
 
-        <div className="absolute right-0 top-0 z-10 hidden w-1/2 items-end bg-transparent lg:flex">
-          <img src="/graphics/man2.png" />
-        </div>
         <div className="m-auto mb-0 w-full space-y-8 pt-24 text-center lg:mb-auto lg:max-w-7xl lg:pt-0 lg:text-left">
-          <div className="m-auto max-w-lg space-y-6 lg:m-0">
+          <div className="m-auto max-w-lg space-y-6 lg:m-0 lg:pl-10">
             <h1>
               <span className="mb-4 flex items-center justify-center gap-3 font-poppins text-sm font-bold uppercase text-stone-500 lg:justify-start">
                 <span className=" hidden h-0.5 w-8 bg-stone-400 lg:inline-block" />{' '}
@@ -122,11 +121,10 @@ export default function Hero() {
             </p>
           </div>
           <div className="m-auto aspect-square max-w-md overflow-hidden lg:hidden">
-            <img src="/graphics/man2.png" />
+            <img src="/graphics/man2_cut.png" />
           </div>
         </div>
       </main>
-
       <footer className="z-30 hidden w-full items-center justify-between p-8 lg:flex lg:px-16 lg:py-14">
         <nav>
           <ul className="flex items-center">
