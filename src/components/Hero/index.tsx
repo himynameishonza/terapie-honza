@@ -110,8 +110,12 @@ export default function Hero() {
                 <span className=" hidden h-0.5 w-8 bg-stone-400 lg:inline-block" />{' '}
                 Dobrý den
               </span>
-              <span className="font-merri text-4xl font-black text-stone-700 lg:text-5xl">
-                Mé jméno je <span className="text-indigo-600">Honza</span>
+              <span className="block font-merri text-4xl font-black leading-[1.3] text-stone-700 lg:text-5xl lg:leading-[1.5]">
+                Jsem <span className="text-indigo-600">Honza</span>
+                <br className="inline-block lg:hidden" /> a jsem{' '}
+                <span className="lg:ml-4 lg:text-6xl">
+                  Váš<span className="text-indigo-600"> terapeut.</span>
+                </span>
               </span>
             </h1>
             <p className="font-open text-base font-normal leading-7 tracking-wide text-stone-600">
