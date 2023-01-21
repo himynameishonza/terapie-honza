@@ -1,9 +1,9 @@
 import classnames from 'classnames'
 import { useState } from 'react'
-import { TiSocialLinkedin, TiSocialFacebook } from 'react-icons/Ti'
-import { MdOutlineMedicalServices } from 'react-icons/Md'
+import { TiSocialLinkedin, TiSocialFacebook } from 'react-icons/ti'
+import { MdOutlineMedicalServices } from 'react-icons/md'
 import { HiArrowLongDown } from 'react-icons/hi2'
-import { CgMenuRight } from 'react-icons/Cg'
+import { CgMenuRight } from 'react-icons/cg'
 
 const mainNavItems = [
   {
