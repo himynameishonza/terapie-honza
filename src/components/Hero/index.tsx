@@ -15,7 +15,7 @@ const mainNavItems = [
     href: '#',
   },
   {
-    label: 'Pro odbornou věřejnost',
+    label: 'Pro odbornou veřejnost',
     href: '#',
   },
   {
@@ -97,9 +97,9 @@ export default function Hero() {
 
       <main className="relative m-auto flex min-h-full w-full max-w-7xl items-center px-8">
         <div className="mt-50 absolute right-10 top-10 z-20 hidden h-[500px] w-[500px] translate-x-1/3 animate-move-x rounded-full bg-indigo-300 mix-blend-overlay lg:block lg:translate-x-0" />
-        <div className="mt-50 absolute right-0 top-0 -z-10 hidden h-[650px] w-[650px] translate-x-1/4 animate-move-y rounded-full bg-indigo-400 lg:block lg:translate-x-0" />
+        <div className="mt-50 absolute right-0 top-0 -z-10 hidden h-[650px] w-[650px] translate-x-1/4 animate-move-y rounded-full bg-indigo-500 bg-opacity-50 lg:block lg:translate-x-0" />
         <div className="absolute right-0 top-0 z-10 hidden w-1/2 items-end bg-transparent lg:flex">
-          <img src="/graphics/man.png" />
+          <img src="/graphics/man2.png" />
         </div>
         <div className="m-auto mb-0 w-full space-y-8 pt-24 text-center lg:mb-auto lg:max-w-7xl lg:pt-0 lg:text-left">
           <div className="m-auto max-w-lg space-y-6 lg:m-0">
@@ -119,7 +119,7 @@ export default function Hero() {
             </p>
           </div>
           <div className="m-auto aspect-square max-w-md overflow-hidden lg:hidden">
-            <img src="/graphics/man.png" />
+            <img src="/graphics/man2.png" />
           </div>
         </div>
       </main>
@@ -129,9 +129,9 @@ export default function Hero() {
           <ul className="flex items-center">
             {socialNavItems.map((item, index) => {
               return (
-                <li key={index}>
+                <li key={index} className="group">
                   <a
-                    className="mx-2 flex justify-center rounded-full bg-stone-200 p-2 text-xl text-stone-700"
+                    className="mx-2 flex justify-center rounded-full border-2 border-indigo-500/10 p-2.5 text-xl text-indigo-500 ring-2 ring-indigo-100 transition-all group-hover:border-indigo-700 group-hover:bg-indigo-100 group-hover:text-indigo-900"
                     href={item.href}
                     key={index}
                   >
