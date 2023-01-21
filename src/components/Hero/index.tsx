@@ -1,9 +1,9 @@
-import { CgMenuRight } from 'react-icons/Cg'
 import classnames from 'classnames'
 import { useState } from 'react'
 import { TiSocialLinkedin, TiSocialFacebook } from 'react-icons/Ti'
 import { MdOutlineMedicalServices } from 'react-icons/Md'
 import { HiArrowLongDown } from 'react-icons/hi2'
+import { CgMenuRight } from 'react-icons/Cg'
 
 const mainNavItems = [
   {
@@ -133,6 +133,7 @@ export default function Hero() {
                   <a
                     className="mx-2 flex justify-center rounded-full bg-stone-200 p-2 text-xl text-stone-700"
                     href={item.href}
+                    key={index}
                   >
                     {item.icon}
                   </a>
